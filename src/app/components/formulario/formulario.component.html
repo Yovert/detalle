@@ -1,0 +1,10 @@
+<section class="tasks">
+  <h1>Enter Your Data Honey</h1>
+  <form action="" class="data">
+    <input type="text" name="nombre" placeholder="Name" [(ngModel)]="nombre">
+    <input type="text" name="apellido" placeholder="LastName" [(ngModel)]="apellido">
+    <input type="text" name="comida" placeholder="favorite food" [(ngModel)]="comida">
+    <button type="submit" (click)="mostrar()">Confirm</button>
+  </form>
+</section>
+<app-presentation></app-presentation>
