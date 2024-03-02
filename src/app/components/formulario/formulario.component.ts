@@ -16,6 +16,7 @@ export class FormularioComponent {
   apellido=""
   lastName=""
 
+
   dog=""
   Ndog=""
 
@@ -23,12 +24,16 @@ export class FormularioComponent {
 
   mostrar(){
     this.name=this.nombre
-    if(this.name=="yovert"){
-      this.name=this.nombre
+    if(this.nombre.toLowerCase()=="yovert"){
+      this.name=" Att: " + this.nombre + " 🫰"
+    }else{
+      this.name=""
     }
     this.lastName=this.apellido
-    if(this.lastName=="sahoris"){
-      this.lastName=this.apellido
+    if(this.apellido.toLowerCase()=="sahoris"){
+      this.lastName="Con mucho amor para " + this.apellido
+    }else{
+      this.lastName="Nombre Incorrecto"
     }
     this.Ndog=this.dog
     this.mostrarData=true

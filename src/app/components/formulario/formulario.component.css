@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .tasks
 {
   width: 40vw;
@@ -7,7 +14,6 @@
   padding: 1vw;
   font-family: "Madimi One", sans-serif;
   background: pink;
-  margin: auto;
   box-shadow: 4px 4px 4px 4px  rgb(201, 191, 191);
 }
 .data
@@ -49,10 +55,16 @@
 
 @media screen and (max-width:470px) {
   .tasks{
-    height: 45vw;
-    width: 47vw;
+    height: 80%;
+    width: 75%;
   }
-  .tasks h1{
+  .data input{
+    height: 8vw;
+    font-size: 4vw;
+  }
+  .data button{
+    height: 8vw;
+    width: 24vw;
     font-size: 4vw;
   }
 }

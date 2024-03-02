@@ -112,3 +112,39 @@ figure:hover .she{
     font-size: 1.6vw;
   }
 }
+@media screen and (max-width:450px) {
+  .tasks h2{
+    font-size: 4vw;
+  }
+  .tasks{
+    display: grid;
+    gap: 2vw;
+    width: 90vw;
+  }
+  .images_primary{
+    width: 40vw;
+  }
+  figure .she{
+    width: 40vw;
+    padding: 1vw;
+    font-size: 3vw;
+  }
+  .she button{
+    width: 15vw;
+    height: 5vw;
+    font-size: 2vw;
+  }
+  .song{
+    width: 70vw;
+    font-size: 3vw;
+  }
+  .fotico{
+    width: 30vw;
+  }
+  .fotico img{
+    width: 100%;
+  }
+  .fotos{
+    width: 35vw;
+  }
+}
