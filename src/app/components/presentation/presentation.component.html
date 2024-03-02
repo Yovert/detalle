@@ -1,5 +1,7 @@
-<main>
+@if (mostrar) {
+<main class="tasks">
   <section class="images">
+    <h2>Con mucho amor para  {{apellido}} <br> Att: {{nombre }} 🫰</h2>
     <figure class="images_primary">
       <img src="../../../assets/one.jpeg" alt="">
       <div class="she">
@@ -11,13 +13,38 @@
           <p>Responsable</p>
           <p>Respetuosa</p>
         <p>etc etc etc.</p>
-        <button>Press</button>
+        <button (click)="mostrarMen()">Press</button>
       </div>
     </figure>
+    @if (mensaje2) {
+    <figure class="images_primary image_two">
+      <img src="../../../assets/three.jpeg" alt="">
+      <div class="she inversa">
+        <p>Nuestra historia a sido un poco rara razones que son claras "Nunca nos hemos dado nisiquiera un beso".
+          Pero no hay problema tendo esperanza de criar ese {{perro}} junto a ti I LOVE YOU <3
+        </p>
+        <h3>Realmente eres mi tipo de mujer.</h3>
+        <button (click)="mostrarSong()">Press</button>
+      </div>
+    </figure>
+  }
   </section>
+  @if (Song) {
   <section class="song">
     <div class="message">
       <p>La escuche & pense en ti <br> "Te la dedico con todo mi corazon".</p>
+      <p>Mi gran objetivo es declararme & demostrarte la intensidad en la que te pienso
+        & en la que tepuedo mostrar mi bello Amor.
+      </p>
+      <span>ESCUCHA PIENSA ANALIZA & AQUI ESTARE ESPERANDO UNA RESPUESTA "SIN IMPORTAR SI ES POSITIVA O NEGATIVA"</span>
+    </div>
+    <div class="fotos">
+      <figure class="fotico">
+        <img src="../../../assets/four.jpeg" alt="">
+      </figure>
+      <figure class="fotico">
+        <img src="../../../assets/juntos.jpeg" alt="">
+      </figure>
     </div>
     <audio #audioPlayer controls>
       <source src="../../../assets/Transforma Mi Mundo.mp3" type="audio/mpeg">
@@ -27,4 +54,6 @@
       <br>Sencillo Pero Con Cariño 💘 </p>
     </div>
   </section>
+}
 </main>
+}

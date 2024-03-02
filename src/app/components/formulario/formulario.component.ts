@@ -16,15 +16,21 @@ export class FormularioComponent {
   apellido=""
   lastName=""
 
-  comida=""
-  food=""
+  dog=""
+  Ndog=""
+
+  mostrarData=false
 
   mostrar(){
     this.name=this.nombre
-    if(this.name=="sahoris"){
-      console.log("correcto")
+    if(this.name=="yovert"){
+      this.name=this.nombre
     }
     this.lastName=this.apellido
-    this.food=this.comida
+    if(this.lastName=="sahoris"){
+      this.lastName=this.apellido
+    }
+    this.Ndog=this.dog
+    this.mostrarData=true
   }
 }

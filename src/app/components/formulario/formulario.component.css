@@ -38,3 +38,21 @@
   background: rgb(230, 87, 113);
   cursor: pointer;
 }
+@media screen and (max-width:600px) {
+  .tasks{
+    height: 45vw;
+    width: 42vw;
+    display: grid;
+  }
+}
+
+
+@media screen and (max-width:470px) {
+  .tasks{
+    height: 45vw;
+    width: 47vw;
+  }
+  .tasks h1{
+    font-size: 4vw;
+  }
+}

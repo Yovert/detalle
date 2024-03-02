@@ -1,20 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
-main{
+.tasks{
   font-family: "Madimi One", sans-serif;
-  display: flex;
   width: 95vw;
   background: rgb(0, 132, 255);
   margin-top: 2vw;
   border-radius: 2vw 2vw 8vw 2vw;
   box-shadow: 4px 4px 4px 4px  rgb(201, 191, 191);
-}
-.images
-{
-width: 50vw;
+  padding: 1vw;
 }
 .images_primary
 {
-  width: 37vw;
+  width: 26vw;
   display: flex;
   position: relative;
 }
@@ -22,10 +18,17 @@ width: 50vw;
   width: 100%;
   border-radius: 3vw 1vw;
 }
+.image_two img{
+  border-radius: 1vw 3vw;
+}
+.image_two{
+  position: relative;
+  float: right;
+}
 figure .she{
   position: absolute;
   top: 0;
-  width: 100%;
+  width: 25vw;
   height: 100%;
   background: rgba(0,0, 0, 0.5);
   transition: all 500ms ease-out;
@@ -35,6 +38,10 @@ figure .she{
   padding-left: 1vw;
   color: rgb(252, 182, 193);
   border-radius: 3vw 1vw;
+}
+figure .inversa{
+  border-radius: 1vw 3vw;
+  width: 25vw;
 }
 figure:hover .she{
   opacity: 1;
@@ -51,15 +58,57 @@ figure:hover .she{
   cursor: pointer;
   background: rgb(72, 153, 247);
 }
+.she button:hover{
+  background: rgb(66, 66, 153);
+}
+.fotos{
+  display: flex;
+  gap: 1vw;
+  width: 20vw;
+  margin: auto;
+}
+.fotico{
+  width: 10vw;
+}
+.fotico img{
+  width: 100%;
+  border-radius: 2vw 4vw;
+}
+
 .song
 {
   border: 0.1vh solid rgb(99, 97, 97);
-  width: 38vw;
+  width: 30vw;
   padding: 1vw;
   border-radius: 2vw;
-  height: 35vw;
   margin: auto;
 }
 .song audio{
   width: 100%;
+}
+@media screen and (max-width:710px) {
+  .tasks{
+    display: grid;
+    width: 70vw;
+    margin: auto;
+    margin-top: 2vw;
+  }
+  .she{
+    font-size: 1.5vw;
+  }
+  .image_two{
+    margin: auto;
+  }
+  .song{
+    font-size: 2vw;
+  }
+  .fotico{
+    margin: auto;
+  }
+  audio{
+    height: 6vw;
+  }
+  .she button{
+    font-size: 1.6vw;
+  }
 }

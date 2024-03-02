@@ -1,10 +1,14 @@
 <section class="tasks">
   <h1>Enter Your Data Honey</h1>
   <form action="" class="data">
-    <input type="text" name="nombre" placeholder="Name" [(ngModel)]="nombre">
-    <input type="text" name="apellido" placeholder="LastName" [(ngModel)]="apellido">
-    <input type="text" name="comida" placeholder="favorite food" [(ngModel)]="comida">
+    <input type="text" name="nombre" placeholder="De" [(ngModel)]="nombre">
+    <input type="text" name="apellido" placeholder="Para" [(ngModel)]="apellido">
+    <input type="text" name="dog" placeholder="Favorite dog breed" [(ngModel)]="dog">
     <button type="submit" (click)="mostrar()">Confirm</button>
   </form>
 </section>
-<app-presentation></app-presentation>
+<app-presentation
+[nombre]="name"
+[apellido]="lastName"
+[perro]="Ndog"
+[mostrar]="mostrarData"></app-presentation>
